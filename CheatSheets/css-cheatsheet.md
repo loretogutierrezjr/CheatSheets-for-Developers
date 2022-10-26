@@ -7,6 +7,28 @@ updated: 2022-07-02
 
 ## CSS
 
+### BASICS
+`Syntax` - basic code sctructure of CSS
+```css
+   selector { 
+    property: value; 
+    property2: value2; }
+```
+
+`Clearfix` - to clear its child elements automatically without any additional markup.
+```css
+    .clearfix:after {
+        clear: both;
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden; }
+    .clearfix { display: inline-block; }
+    * html .clearfix { height: 1%; }
+    .clearfix { display: block; }
+```
+
 ### 1. Inline CSS
 
 `style` attribute is used to define CSS properties at each HTML element.
@@ -96,6 +118,22 @@ there are also more fun selectors for different use cases that could be helpful 
         background:white;
     }
 ```
+
+### SELECTORS & Descriptions
+| Selectors             | Descriptions                          |
+| --------------------- | --------------------------------------|
+| *                     | all elements                          |
+| div                   | all div tags                          |
+| div,p                 | all divs and paragraphs               |
+| div p                 | paragraphs inside divs                |
+| div > p               | all p tags, one level deep in div     |
+| div + p               | p tags immediately after div          |
+| div ~ p               | p tags preceded by div                |
+| .classname            | all elements with class               |
+| #idname               | element with ID                       |
+| div.classname         | divs with certain classname           |
+| div#idname            | div with certain ID                   |
+| #idname*              | all elements inside #idname           |
 
 ### 5. Units
 
